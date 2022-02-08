@@ -1,0 +1,41 @@
+1.	A customer can only rent one vehicle at a time
+2.	One customer can rent a vehicle more than once, if he/she has returned back earlier rented vehicle. They will have a unique rental ID each time.
+3.	A customer can rent no vehicle or many vehicles.
+4.	A vehicle can be rented multiple times.
+5.	A vehicle can only be present at one location at a time.
+6.	One location can have no vehicles at all or many vehicles.
+7.	A vehicle can be rented or not at all.
+8.	A valid license is required to rent a vehicle. 
+9.	The customer picks up and drops off the vehicle on their specified dates.
+10.	While renting a car customer should define pickup and drop-off location in advance.
+11.	The customer must have insurance to rent a car.
+12.	The customer has a choice to use the rental company’s insurance or their own. 
+13.	Insurance will come in 3 types-none, half, full.
+14.	Before renting a car , customer should pay deposit amount only  through credit card ,that will act as hold for charging incase of scenarios  like penalties , fines or any damages. Deposit amount vary for different vehicle. Expensive vehicle will have high deposit amount.
+15.	Deposit amount will be returned back once the car is returned .
+16.	Payment methods can be debit, credit, or cash for  the total rental charge . 
+17.	The entire payment is made up front.
+18.	The payment is made after returning the vehicle.
+19.	The final drop-off is always at the specified rental location.
+20.	The rental company locations are limited to the U.S.
+21.	Vehicle rental rate will vary depending on vehicle type.
+22.	When renting a vehicle, it will have a full tank to start with.
+23.	Customer will be charged extra depending whether the vehicle is returned with empty vs half tank vs full. $25 for half full, $50 for empty. 
+24.	Total rental amount is calculated by (number_of_days*per_day_rate)+insurance+tank_level_fine.
+25.	Tax rates will vary based on the state where the vehicle was rented from. 
+26.	A unique invoice will be created for a customer with the appropriate payment information.
+27.	Revenue will be added to the account of the location from where the vehicle was rented.
+
+Entity Relationships: 
+
+Customer and Rental: 0 to many
+Vehicle and Rental: 0 to many
+Customer and License: 1 to 1
+Customer and Card_Detail: 1 to many
+Card_Detail and Deposit  :1  to many
+Location and Rental: 0 to many
+Location and Vehicle: 0 to many
+Location and Tax: 1 to many
+Rental and Deposit: 1 to 1
+Rental and Invoice: 1 to many
+Rental and Insurance: 1 to 1
