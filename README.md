@@ -10,7 +10,8 @@ This project is a simple Car Rental web app project. After completing this proje
 Project is created with:
 * MYSQL
 * PHP7
-## Before starting the project, following concepts are needed or understood:
+## Setup
+Before starting the project, following concepts are needed or understood:
 * Business Rules
 * ERD(Entity Relationship Diagram)
 * SQL Statement
